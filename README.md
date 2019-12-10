@@ -1,4 +1,4 @@
-#Java Compiler 
+# Java Compiler 
 
 A compiler for JAVA is created using lex and yacc. In addition to the constructs
 specified, basic building blocks of the language (declaration statements, assignment
