@@ -1,0 +1,4 @@
+yacc -d -v optimicons.y
+lex optimicons.l
+gcc lex.yy.c y.tab.c -ll -ly
+./a.out

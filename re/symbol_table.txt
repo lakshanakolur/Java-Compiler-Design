@@ -1,0 +1,7 @@
+Final Symbol table 
+Name  Value  Type  Scope Occurrence
+b  4  int  0  1
+a  2  int  1  1
+c  3  int  1  1
+d  0  int  1  1
+c  0  int  0  1

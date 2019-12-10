@@ -1,0 +1,47 @@
+start
+b = 3
+c = 7
+a = 6
+a = 5
+T1 = 6 / 7
+T2 = c - T1
+c = T2
+d = 7
+L1:T3 = c > d
+if T3 go to L4
+go to L3
+L4:T4 = a > b
+if T4 go to L2 
+go to L3 
+L2:a = 7
+c = 3
+L5:T5 = a > b
+if T5 go to L6 
+go to L7 
+L6:a = 7
+c = 3
+go to L5
+L7:go to L1
+d = 0
+go to L1
+L3:a = 5
+T6 = c + 5
+T7 = 5 == L9
+if T7 go to L9
+go to L10
+T6:a = 0
+go to L8
+go to L11
+L10:T8 = 6 == L11
+if T8 go to L11
+go to L12
+T6:a = 1
+go to L8
+go to L13
+L12:a = 2
+L8:L13:c = 5
+T9 = 6 * 4
+T10 = 5 * 4
+T11 = T10 + T9
+c = a[T11]
+stop

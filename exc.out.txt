@@ -1,0 +1,21 @@
+yacc -d -v sym.y
+lex sym.l
+gcc lex.yy.c y.tab.c -ll -ly
+./a.out a.java
+yacc -d -v ast.y
+lex ast.l
+gcc lex.yy.c y.tab.c -ll -ly
+./a.out a.java
+yacc -d -v gram-2.y
+lex token.l
+gcc lex.yy.c y.tab.c -ll -ly
+./a.out a.java
+yacc -d -v optimicons.y
+lex optimicons.l
+gcc lex.yy.c y.tab.c -ll -ly
+./a.out
+clear
+echo "Semantic Analysis Successful"
+echo "AST Generated in ast.txt"
+echo "ICG Generated in icg.txt"
+echo "Optimised ICG Generated in Optimised.txt"
